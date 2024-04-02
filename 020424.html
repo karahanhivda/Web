@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 50px;
+            background-color: red;
+            color: antiquewhite;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <label>Sayi1</label><input type="text" id="txtSayi1">
+    <label>Sayi2</label><input type="text" id="txtSayi2">
+    <button onclick="Bul()">Karşılaştır</button> -->
+
+    <button onclick="RenkAta()">Değiştir</button>
+
+    <div id="divX"></div>
+    <div id="divY"></div>
+
+    <script>
+        //Kodları yazıp inceleyiniz
+            // alert("Hello World");
+            // let sayi = 8;
+            // let gun = "Sali";
+            // let tatilGunu1 = "Cumartesi";
+            // let tatilGunu2 = "Pazar";
+            // alert(gun);
+            // let tatilGunleri = tatilGunu1 + " " +    tatilGunu2;
+            // let z = gun + sayi;
+            // console.log(z);
+            // alert(tatilGunleri);
+
+            // console.log(8+5);
+            // console.log(8 + "5");
+            // console.log(8 + "5" + 7 * ("5" + 2));
+            // console.log(8 - "5");
+            // console.log("8" - "5");
+            // console.log(8 * "5");
+            // console.log(8 + "5" + 7 * "5" + 2);
+
+        // let num1 = 6;
+        // let num2 = 16;
+        // if(num1 > num2)
+        //     console.log(num1)        
+        // else if(num2 > num1)
+        //     console.log(num2)        
+        // else
+        //     console.log("Sayılar eşşittir")
+
+        
+        // function Bul(x, y){
+        //     let sayi1 = Number(document.getElementById("txtSayi1").value);
+        //     console.log("Sayi1 = " + sayi1);
+
+        //     let sayi2 = Number(document.getElementById("txtSayi2").value);
+        //     console.log("Sayi2 = " + sayi2);
+
+        //     if(sayi1>sayi2)
+        //         console.log("Sayi1 büyüktür")
+        //     else if(sayi2>sayi1)
+        //         console.log("Sayi2 büyüktür")
+        //     else
+        //         console.log("Sayılar eşittir")
+        // }
+
+
+            window.onmousemove = function(koordinat){
+                document.getElementById("divX").innerHTML="X: " + koordinat.clientX;
+                document.getElementById("divY").innerHTML="Y: " + koordinat.clientY;
+            }
+        
+            let random = Math.random();
+            console.log(random);
+
+            let dizi = [];
+            dizi.push(6);
+            dizi.push(7);
+            dizi.pop();
+            console.log(dizi);
+
+            function RenkAta(){
+                let renkler = ["red", "green", "blue", "yellow", "pink"];
+                let rastgeleIndis = Math.floor(Math.random() * 5);
+                document.body.style.backgroundColor = renkler[rastgeleIndis];
+            }
+
+    </script>
+</body>
+</html>

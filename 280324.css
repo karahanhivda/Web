@@ -1,0 +1,44 @@
+h2{
+    background-color: red;
+    font-style: italic;
+}
+h3{
+    text-align: right;
+}
+.div{
+    border-style: dashed;
+    margin: 50px;
+    padding: 50px;
+    width: 100px;
+    height: 100px;
+}
+#smyy{
+    background-color: chocolate;
+}
+.cskn{
+    background-color: cornflowerblue;
+}
+/* #p{
+    background-color: purple;
+} */
+div p{
+    background-color: purple;
+}
+div>p{  
+    background-color: orange;
+}
+div+p{
+    background-color: blue;
+}
+a[target]{
+    background-color: brown;
+}
+div[class="sonuc"]{
+    color: blue;
+}
+div[class*="sonuc"]{
+    color: red;
+}
+div[class^="sonuc"]{
+    color: green;
+}
