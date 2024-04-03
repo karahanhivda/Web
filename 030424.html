@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // function Random() {
+        //     var dizi = [];
+        //     let sayi;
+        //     for (var i = 0; i < 10; i++) {
+
+        //         sayi = Math.floor(Math.random() * 10) + 1;
+
+        //         while (dizi.includes(sayi))
+        //             sayi = Math.floor(Math.random() * 10) + 1;
+
+        //         dizi.push(sayi);
+
+        //     }
+        //     console.log(dizi);
+        // }
+
+        // function MonotonDizi(){
+        //     let monotonMu=true;
+        //     var dizi1 = [1,2,3,4,5,6];
+        //     // sayi = dizi[0];
+        //     for(i=0; i<dizi1.length; i++){
+        //         if(dizi1[i]<=dizi1[i-1])
+        //         {
+        //             monotonMu=false;
+        //             console.log("Dizi monoton değildir");
+        //             break;
+        //         }
+
+
+        //     }
+        //     if(monotonMu)
+        //         console.log("Dizi monotondur");
+
+
+        // //1
+        // for (var index = 0; index <= 10; index++) {
+        // }
+        // console.log(index);
+
+        // //2
+        // for (let index2 = 0; index2 <= 10; index2++) {
+
+        // }
+        // console.log(index2);
+
+        // //3
+        // for (const index3 = 0; index3 <= 10; index3++) {
+
+        // }
+        // console.log(index3);
+
+        // //4
+        // var x = 4;
+        // var x = 6;
+        // console.log(x);
+        // //5
+        // // let y = 4;
+        // // let y = 6;
+        // // console.log(y);
+        // //6
+        // const z = 6;
+        // z = 77;
+        // console.log(z);
+
+        // //7
+        // const dizi = [1, 2, 3, 4];
+        // dizi[0] = 9;
+        // console.log(dizi[0]);
+
+        // //8
+        // const dizi2 = [1, 2, 3, 4];
+        // const dizi3 = [9, 10, 11, 12];
+        // dizi3 = dizi2;
+        // console.log(dizi3);
+        // //9
+        // const dizi4 = [1, 2, 4, 5];
+        // for (let index = 0; index < array.length; index++) {
+        //     console.log(dizi4[index]);
+        // }
+        // //10
+        // const dizi5 = [1, 2, 4, 5];
+        // for (const key in dizi5) {
+        //   dizi5[key]=44;
+        //   console.log(dizi5[key]);
+        // }
+        // //11
+        // const dizi6 = [1, 2, 4, 5];
+        // for (const sayi of dizi6) {
+        //     sayi=3;
+        //     console.log(sayi);
+        // }
+
+        function Bul() {
+            let adet = 0;
+            let metin = document.getElementById("yazi").value;
+            let aranan = document.getElementById("txtAranan").value;
+        }
+
+        while(true){
+            konum = metin.indexOf(aranan);
+        }
+
+    </script>
+    <!-- <button onclick="Random()">Random Sayı Üret</button>
+    <button onclick="MonotonDizi()">Monoton Dizi Kontrolü</button> -->
+
+    <label>Aratılacak Kelime: </label><input type="text" id="txtAranan">
+    <button onclick="Bul()">Ara</button>
+
+    <p id="yazi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda excepturi nostrum eos autem, ut amet
+        saepe sed sunt quaerat modi est officiis sit deleniti! Laudantium aspernatur dolores odit, facilis, alias sunt
+        tempore soluta molestias amet ut, numquam error! Voluptatum corporis tenetur temporibus, officiis distinctio
+        vitae quae nobis. Voluptate, porro accusantium.</p>
+
+</body>
+
+</html>
